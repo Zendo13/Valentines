@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Final Page! 💕</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f5576c 0%, #f093fb 100%);
+            font-family: 'Arial', sans-serif;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+
+        h1 {
+            color: #d63031;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            animation: heartbeat 1.5s ease-in-out infinite;
+        }
+
+        @keyframes heartbeat {
+            0%, 100% { transform: scale(1); }
+            25% { transform: scale(1.1); }
+            50% { transform: scale(1); }
+        }
+
+        .gif-container {
+            margin: 30px 0;
+        }
+
+        .gif-container img {
+            width: 280px;
+            height: 280px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .message {
+            font-size: 1.3em;
+            color: #2d3436;
+            line-height: 1.8;
+            margin: 20px 0;
+            padding: 25px;
+            background: linear-gradient(135deg, rgba(240, 147, 251, 0.2) 0%, rgba(245, 87, 108, 0.2) 100%);
+            border-radius: 15px;
+            font-weight: 500;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        button {
+            padding: 18px 45px;
+            font-size: 1.4em;
+            font-weight: bold;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .yes-btn {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            animation: glow 2s ease-in-out infinite;
+        }
+
+        @keyframes glow {
+            0%, 100% { box-shadow: 0 5px 15px rgba(245, 87, 108, 0.4); }
+            50% { box-shadow: 0 10px 30px rgba(245, 87, 108, 0.8); }
+        }
+
+        .yes-btn:hover {
+            transform: scale(1.15);
+        }
+
+        .no-btn {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+            color: #333;
+        }
+
+        .no-btn:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> sge naaaaaaa! 💖</h1>
+        
+        <!-- CHANGE GIF URL HERE -->
+        <div class="gif-container">
+            <img src="https://media.giphy.com/media/3oEjHV0z8S7WM4MwnK/giphy.gif" alt="Puppy with big eyes">
+        </div>
+
+        <!-- CHANGE MESSAGE HERE -->
+        <div class="message">
+     ayaw mo talaga papayag ka oh papayag? ❤️✨
+        </div>
+
+        <div class="buttons">
+            <button class="yes-btn" onclick="window.location.href='celebration.html'">YES! I'LL BE YOUR VALENTINE! 💖</button>
+            <button class="no-btn" onclick="alert('Really? After all this? 😢 Okay... but the YES button will still be here if you change your mind! 💕')"> Ayaw 💔</button>
+        </div>
+    </div>
+</body>
+</html>
